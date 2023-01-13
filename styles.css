@@ -12,47 +12,46 @@ box-shadow: rgba(0, 0, 0, 0.05) 0px 10px 24px 0px, rgba(0, 0, 0, 0.05) 0px 20px 
   box-sizing: border-box;
   margin:0;
   padding:0;
-  -moz-appearance:none;
-  -webkit-appearance:none;
-  -o-appearance:none;
 }
-
-
 
 html {
   font-size: 14px;
 }
 
-
 body {
+  width:100vw;
+  height:100vh;
   background: #F1F2F3;
   margin:0 auto;
   font-family: Arial, sans-serif;
   text-align: center;
+  display:flex;
+  justify-content:center;
+  align-items:center;
 }
 
+/*Column1
+Info*/ 
+
 .col1 {
-  width:45vw;
-  height: 40vh;
-  border:5px dashed black;
+  width:38em;
+  height:28em;
+  margin:0;
   display:inline-flex;
-  position:relative;
   flex-direction: column;
   justify-content:center;
   align-items:flex-end;
+  position:relative;
 }
 
 .col1-text {
-  margin-left:5em;
-  padding-right:1em;
   text-align: left;
   position: absolute;
-  right: 0;
+  left:0;
 }
 
-
 .text-small {
-  font-size:0.8rem;
+  font-size:0.85rem;
 }
 
 .text-margin-top-small {
@@ -64,39 +63,37 @@ color: #0074CC;
 text-decoration: none;
 }
 
-
 i.fa-solid{
   margin-top:1em;
   padding:0 2em 0.7em 0;
   color: #0074CC;
-  font-size:1.3rem;
+  font-size:1.5rem;
   background-color:#F1F2F3;
 }
 
+/*column2
+forms and links*/ 
 
 .col2 {
-  width: 25vw;
-  height:100vh;
-  border:5px solid black;
+  width:25em;
+  height:66em;
+  margin:0;
   display:inline-block;
-
 }
 
 .button-container{
-  height:10vh;
-  width: 25vw;
-  margin-bottom: 1.3em;
+  height:10em;
+  width: 24em;
+  margin-bottom: 0.5em;
   background-color: #F1F2F3;
-  padding: 1.5em;
   position:relative;
-  left:-1.8vh;
-  top:-2.5vh;
+  
 }
 
 
 .facebook {
   color:white;
-  height:2.5vh;
+  height:2.5em;
   padding:0.75em;
   margin:0.5em 0;
   border-radius: 0.3em;
@@ -107,6 +104,7 @@ i.fa-solid{
   text-align:center;
   justify-content:center;
   align-items:center;
+  cursor: pointer;
 }
 
 .google{
@@ -121,6 +119,7 @@ i.fa-solid{
   text-align:center;
   justify-content:center;
   align-items:center;
+  cursor: pointer;
 }
 
 .github {
@@ -136,6 +135,7 @@ i.fa-solid{
   justify-content:center;
   align-items:center;
   color:white;
+  cursor: pointer;
 }
 
 a[href*="github"]:link {
@@ -159,23 +159,24 @@ a[href*="google"]:link {
 
 .data{
   background-color: #FFFFFF;
-  width:22vw;
-  height: 53vh;
+  width:24em;
+  height: 45em;
   text-align: left;
   padding:1.2em 1.1em;
+  display:block;
   position: relative;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 10px 24px 0px, rgba(0, 0, 0, 0.05) 0px 20px 48px 0px, rgba(0, 0, 0, 0.1) 0px 1px 4px 0px;
   border-radius: 0.4em;
 }
 
 #name, #email, #pw {
+  width: 21em;
+  padding:0.5em 0.5em;
   margin-top: 0.3em;
   border: 0.2em solid rgb(236, 236, 236);
   border-radius:0.3em;
-  width: 17em;
-  padding:0.5em 0.5em;
   font-size:1rem;
-  
+  cursor:auto;
 }
 
 
@@ -187,10 +188,11 @@ label{
   margin:0.6em 0;
   color:rgb(136, 135, 135);
   text-align: left;
+  padding-bottom: 1em;
 }
 
 .robot-container{
-  width:17em;
+  width:21em;
   height:10em;
   background-color: #F1F2F3;
   display:flex;
@@ -214,43 +216,47 @@ label{
 }
 
 #robot{
-  vertical-align:middle;
   width:1.5em;
   height:1.5em; 
   margin-right:0.8em;
-  outline:0.15em solid rgb(211, 210, 210);
-  border-radius: 0.1em;
+  outline:0.2em solid rgb(221, 220, 220);
+  border-radius: 15%;
+  cursor: pointer;
+  vertical-align:middle;
 }
 
 div.ads{
-  width:18vw;
-  height: 5vh;
-  font-size:0.8rem;
-  font-family: Arial;
-  display:inline-block;
+  width:21em;
+  height: 5em;
+  display:inline-flex;
   text-align: left;
   position:relative;
 }
 
 #ads{
-box-shadow:0px 0px 4px 4px rgb(155, 195, 233);
-margin-right:0.2em;
-width:0.7em;
-height: 0.7em;
-outline:0.1em solid rgb(184, 182, 182);
-border-radius: 0.1em;
-}
+  margin-right:0.2em;
+  width:0.7em;
+  height: 0.7em;
+  /*border-color:transparent;
+  outline:0.1em solid rgb(127, 149, 247);*/
+  box-shadow:0px 0px 3px 3px rgb(155, 195, 233);
+  cursor: pointer;
+  }
 
 span{
-  width:18em;
+  width:22em;
+  font-size:0.9rem;
+  font-family: Arial;
   float:right;
+  padding-left: 1em;
   padding-bottom:1em;
 }
 
 .fa-question-circle{
-position: absolute;
-right:0;
-color: #818385;
+  position: absolute;
+  right:0;
+  color: #818385;
+  cursor: pointer;
 }
 
 div.sign-up{
@@ -258,7 +264,7 @@ div.sign-up{
 }
 
 input[type=submit] {
-  width:20em;
+  width:25em;
   height:3em;
   text-align:center;
   text-shadow: 0.1rem 0.1rem 0.2rem gray;
@@ -270,10 +276,11 @@ input[type=submit] {
   text-decoration: none;
   cursor: pointer;
   border-radius: 0.3em;
+  box-shadow:0px 0px 1px 1px rgb(155, 195, 233);
 }
 
 div.cookie{
-  padding-top: 3vh;
+  padding-top: 3em;
   text-align: justify;
   color:rgb(136, 135, 135);
 }
@@ -281,37 +288,43 @@ div.cookie{
 a[href*="cookie-policy"] {
   color: #0074CC;
   text-decoration: none;
+  cursor: pointer;
   }
 
 a[href*="terms-of-service"] {
     color: #0074CC;
     text-decoration: none;
+    cursor: pointer;
   }
 
 a[href*="privacy-policy"] {
     color: #0074CC;
     text-decoration: none;
+    cursor: pointer;
   }
 
 div.subscripts{
-  margin-top: 4vh;
+  margin-top: 7em;
   text-align: center;
-  font-size:0.8rem;
+  font-size:0.9rem;
   text-decoration: none;
-  background: #F1F2F3;
+  background: none;
 }
 
 a[href*="Login"] {
   color: #0074CC;
   text-decoration: none;
+  cursor: pointer;
 }
 
 a[href*="Talent"] {
   color: #0074CC;
   text-decoration: none;
+  cursor: pointer;
 }
 
 i.fa-external-link{
   padding:0.1em;
   color: #0074CC;
+  cursor: pointer;
 }
